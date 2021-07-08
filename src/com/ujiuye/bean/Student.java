@@ -4,8 +4,24 @@ public class Student {
     private int sid;
     private String sname;
     private int sage;
+    private  String sphone;
 
     public Student() {
+    }
+
+    public Student(int sid, String sname, int sage, String sphone) {
+        this.sid = sid;
+        this.sname = sname;
+        this.sage = sage;
+        this.sphone = sphone;
+    }
+
+    public String getSphone() {
+        return sphone;
+    }
+
+    public void setSphone(String sphone) {
+        this.sphone = sphone;
     }
 
     public Student(int sid, String sname, int sage) {
